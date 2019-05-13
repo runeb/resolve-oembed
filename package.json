@@ -1,13 +1,12 @@
 {
   "name": "resolve-oembed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Async module for resolving oembed for urls",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "query-string": "^6.5.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
@@ -17,7 +16,9 @@
   "scripts": {
     "test": "npx mocha"
   },
-  "keywords": ["oembed"],
+  "keywords": [
+    "oembed"
+  ],
   "author": "Rune Botten <rbotten@gmail.com>",
   "license": "MIT"
 }
