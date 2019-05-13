@@ -1,6 +1,6 @@
 {
   "name": "resolve-oembed",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Async module for resolving oembed for urls",
   "main": "index.js",
   "directories": {
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "superagent": "^5.0.5"
   },
   "devDependencies": {
     "mocha": "^6.1.4"

@@ -1,5 +1,5 @@
 const getEndpoint = require('./getEndpoint')
-const rp = require('request-promise')
+const request = require('superagent')
 
 const oembed = (url, options = { format: 'json' }) => {
   const endpoint = getEndpoint(url)
@@ -12,14 +12,10 @@ const oembed = (url, options = { format: 'json' }) => {
     url
   })
 
-  return rp({
-    uri: endpoint.url,
-    qs: params,
-    headers: {
-      'User-Agent': 'resolve-oembed'
-    },
-    json: params.format === 'json'
-  })
+  return request.get(endpoint.url)
+    .query(params)
+    .set('User-Agent', 'resolve-oembed')
+    .then(res => res.body)
 }
 
 module.exports = oembed
