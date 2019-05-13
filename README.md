@@ -1,5 +1,6 @@
 # resolve-oembed
 
+## Usage
 async module for resolving oembed data for URLs
 
 ```javascript
@@ -13,3 +14,6 @@ async function run() {
 
 run()
 ```
+
+## Providers
+This module uses a local copy of the list of providers at https://oembed.com/providers.json
