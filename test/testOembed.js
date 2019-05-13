@@ -9,7 +9,8 @@ describe('Provider endpoint', function() {
       'https://www.facebook.com/media/set?set=something.in.here,IGuess': 'https://www.facebook.com/plugins/post/oembed.json',
       'spotify:abc321321312': 'https://embed.spotify.com/oembed/',
       'https://subdomain.flat.io/score/123': 'https://flat.io/services/oembed',
-      'https://mathembed.com/latex?inputText=some%20text%20goeshere': 'http://mathembed.com/oembed'
+      'https://mathembed.com/latex?inputText=some%20text%20goeshere': 'http://mathembed.com/oembed',
+      'https://www.youtube.com/watch?v=asENbq3s1m8': 'https://www.youtube.com/oembed',
     }
 
     Object.keys(urls).forEach((url) => {
