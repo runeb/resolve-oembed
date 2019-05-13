@@ -8,6 +8,8 @@ const oembed = require('resolve-oembed')
 
 async function run() {
   await oembed('https://www.instagram.com/p/BwwSWVxgZ8z/').then(console.log)
+  // Adding parameters
+  await oembed('https://www.instagram.com/p/BwwSWVxgZ8z/', { maxwidth: 480 }).then(console.log)
   // non-oembed URLs resolve to null
   await oembed('https://sanity.io').then(console.log) // => null
 }
